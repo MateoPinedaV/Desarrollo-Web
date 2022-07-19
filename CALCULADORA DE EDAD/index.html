@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/jpg" href="img/logo.gif">
+    <title>Calculadora de edad</title>
+    <link rel="stylesheet" type="text/css" href="calculadora.css">
+</head>
+<body>
+
+<div class="cotainer">
+<form>
+<div class="base">
+<div class="enter"></div>
+<h4>Calculadora de edad</h4>
+</div>
+<div class="block">
+<p class="title">Dia</p>
+<input type="text" name="date" id="date" placeholder="DD" required="required" minlength="1" maxlength="2" />
+</div>
+
+<div class="block">
+<p class="title">Mes</p>
+<input type="text" name="month" id="month" placeholder="MM" required="required" minlength="1" maxlength="2" /> 
+
+<div class="block">
+    <p class="title">Año</p>
+    <input type="text" name="year" id="year" placeholder="AAAA" required="required" minlength="4" maxlength="4">
+</div>
+</div>
+<div class="base">
+<div class="enter">
+<input type="button" name="submit" value="Enviar" onclick="age()" />    
+</div>    
+</div>
+<div id="age"></div>
+</form>
+</div>
+<script src="calculadora.js"></script>
+</body>
+</html>
